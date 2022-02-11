@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Desafío 2 de Alura"/>     
+        <meta name="keywords" content="juego, ahorcado" />  
+        <link rel="shortcut icon" href="/img/logo.svg">
+        <link rel="stylesheet" href="/css/index.css"/>
+        <title>Juego del Ahorcado</title>
+    </head>
+    <body>
+        <header>
+            <img  src="/img/logo.svg" id="logo_page" alt="Alura"/>   
+        </header>
+        <div id="menu">
+            <div id="jugar" class="btn jugar"><p>Iniciar Juego</p></div>
+            <div id="agregar" class="btn agregar"><p>Añadir Palabra</p></div>
+        </div>
+        <div id="contenedor-juego">
+            <div> 
+                <canvas id="dibujo" width="250" height="200"></canvas>
+                <canvas id="errado" width="180" height="200"></canvas>
+            </div>
+            <div id="input-letra" class="grupo-input">
+                <div id="mensaje">
+                    <p></p>
+                </div>
+                <input id="letra" class="input" type="text" onkeyup="validarLetra(this)" maxlength="1"/>
+                <div id="home">
+                    <img src="/img/home.png" alt="volver" class="volver"/>
+                </div>
+            </div>
+            <canvas id="palabra" width="500" height="150"></canvas>
+        </div>
+        <div id="contenedor-agregar">
+            <input id="input-palabra" class="input" type="text" maxlength="12" placeholder="Escriba una nueva palabra"/>
+            <div class="grupo-input">
+                <div id="enviar" class="btn palabra"><p>Enviar y empezar</p></div>
+                <div id="cancelar" class="btn cancelar"><p>Cancelar</p></div> 
+            </div>
+        </div>
+        <footer>
+            <ul class="redes_sociales">
+                <li><a href="https://github.com/Crispel0" target="_blank"><img src="/img/Github.png" alt="github" class="footer_icon"></a></li>
+                <li><a href="https://www.instagram.com/penagoscristianlopez/" target="_blank"><img src="/img/instagram.png" alt="Instagram" class="footer_icon"></a></li>
+            </ul>
+            <p id="derechos_reserv">Cristian Penagos | 2022</p>  
+        </footer>
+        <script type="text/javascript" src="/js/index.js"></script> 
+    </body>
+</html>
